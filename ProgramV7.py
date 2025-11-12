@@ -36,7 +36,7 @@ from inference_sdk import InferenceHTTPClient
 # Connect to your workflow
 client = InferenceHTTPClient(
     api_url="https://serverless.roboflow.com",
-    api_key="AWkoe48gfFD2ifjLa1v7" 
+    api_key=os.getenv("ROBOFLOW_API_KEY") #environment variable
     )
 
 cursor2.execute('''
